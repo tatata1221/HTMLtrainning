@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Price Tag</title>
+<title>Price Table</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .container {
     width: 50%;
     margin: auto;
+    padding-top:50px;
+    position:relative;
 }
-    * {
+
+    
+* {
     box-sizing: border-box;
     font-family: Arial;
     font-size:10px;
-    color:grey;
-}
+    color:rgb(85, 81, 81);
+    }
  
 .columns {
     float: left;
@@ -21,16 +25,16 @@
     padding: 15px;
 }
  
-.tour {
+.price {
     list-style-type: none;
     border: 1px solid #eee;
     margin: 0;
-    padding: 0px;
+    padding: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
 }
  
-.tour:hover {
+.price:hover {
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 }
 
@@ -49,19 +53,19 @@
   color:white;
 }
  
-.tour .header {
+.price .header {
     background-color: #111;
     color: white;
     font-size: 25px;
 }
  
-.tour li {
+.price li {
     border-bottom: 1px solid #eee;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
  
-.tour .grey {
+.price .grey {
     background-color: #eee;
 }
  
@@ -94,6 +98,76 @@
     text-decoration: none;
     font-size: 12px;
 }
+
+.topbar1{
+    position:absolute;
+    left:17%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius:50%;
+    top:30px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.5rem;
+    padding:35px 18px;
+    color: rgb(14, 153, 207);
+    background-color: rgb(248, 248, 248);
+    text-align:center;
+}
+
+.topbar2{
+    position:absolute;
+    left:49.5%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius:50%;
+    top:30px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.5rem;
+    padding:35px 18px;
+    color: rgb(14, 153, 207);
+    background-color: rgb(16, 21, 54);
+    text-align:center;
+}
+
+.topbar3{
+    position:absolute;
+    right:7%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius:50%;
+    top:30px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.5rem;
+    padding:35px 20px;
+    color: rgb(14, 153, 207);
+    background-color: rgb(248, 248, 248);
+    text-align:center;
+}
+
+.text{
+    position:absolute;
+    left:33.3%;
+    transform: translateX(-50%);
+    height: 40px;
+    border-radius:50%;
+    top:5px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:1.5rem;
+    padding:35px 20px;
+    color: rgb(14, 153, 207);
+    background-color: black;
+    text-align:center;
+}
+
+}
  
 @media only screen and (max-width: 600px) {
     .columns {
@@ -105,34 +179,45 @@
 <body>
 <div class="container">
     <div class="columns">
-        <ul class="tour">
-            <li style="padding:0"><img src="ocean.png" alt="ocean" style="width:100%"></li>
+        <ul class="price">
+            <div>
+                <img src="ocean.png" alt="ocean" style="width:100%">
+                <div class="topbar1"><div style="color:skyblue;font-size:13px;">$399<br>
+                <span style="color:grey;">Per price</span></div></div>
+                
+            </div>
             <li style="font-size:140%">Subtitle goes here<br><span style="font-size:62%">Subtitle second line goes here lorem ipsum *</span></li>
             <li class="grey">Drop out ramen hustle</li>
             <li>Coworking viral landing</li>
             <li class="grey">Crush revenue traction</li>
             <li>User base minimum viable</li>
- 	    <li class="grey">Lorem ipsum dolor</li>
+ 	        <li class="grey">Lorem ipsum dolor</li>
             <li style="padding:40px"><a href="#" class="button1">BUY TOUR</a></li>
         </ul>
     </div>
  
     <div class="columns">
-        <ul class="tour">
-            <li style="padding:0"><img src="mountain.png" alt="mountain" style="width:100%"></li>
+        <ul class="price">
+            <div>
+                <img src="mountain.png" alt="mountain" style="width:100%">
+                <div class="topbar2"><div style="color:violet;font-size:13px;">$499<br>
+                    <span style="color:grey;">Per price</span></div></div>
+            </div>
             <li style="font-size:140%">Subtitle goes here<br><span style="font-size:62%">Subtitle second line goes here lorem ipsum *</span></li>
             <li class="grey">Drop out ramen hustle</li>
             <li>Coworking viral landing</li>
             <li class="grey">Crush revenue traction</li>
             <li>User base minimum viable</li>
- 	    <li class="grey">Lorem ipsum dolor</li>
+ 	        <li class="grey">Lorem ipsum dolor</li>
             <li style="padding:40px"><a href="#" class="button2">BUY TOUR</a></li>
         </ul>
     </div>
  
     <div class="columns">
-        <ul class="tour">
-            <li style="padding:0"><img src="forest.png" alt="forest" style="width:100%"></li>
+        <ul class="price">
+            <div><img src="forest.png" alt="forest" style="width:100%"></div>
+            <div class="topbar3"><div style="color:green;font-size:13px;">$499<br>
+                <span style="color:grey;">Per price</span></div></div>
             <li style="font-size:140%">Subtitle goes here<br><span style="font-size:62%">Subtitle second line goes here lorem ipsum *</span></li>
             <li class="grey">Drop out ramen hustle</li>
             <li>Coworking viral landing</li>
